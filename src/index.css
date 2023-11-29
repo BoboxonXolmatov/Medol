@@ -1,0 +1,234 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  object-fit: cover;
+}
+.container {
+  max-width: calc(1360px - 70px);
+  padding: 0 35px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 425px) {
+  .container {
+    max-width: calc(1260px - 40px);
+    padding: 0 20px;
+  }
+}
+/* body {
+} */
+.back-img {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(images/blur-header.svg);
+  background-size: cover;
+  z-index: -1;
+}
+.cart {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1380px) {
+  .oKompaniya-left {
+    display: none;
+  }
+  .oKompaniya-right {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .oKompaniya-right p {
+    transform: translate(0);
+  }
+  .oKompaniya-right a {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .carousel-right img,
+  .menu a div {
+    display: none;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .header-left {
+    max-width: 250px !important;
+  }
+  .header .location p,
+  .header .phone p,
+  .header .facebook p {
+    display: none;
+  }
+  .header .location,
+  .header .phone {
+    width: 50px;
+  }
+  .partner-items:first-child {
+    display: none;
+  }
+}
+.menu-burger {
+  transition: all 0.3s;
+  width: 50px;
+  height: 50px;
+  display: none;
+  border-radius: 25px;
+  background: #fff;
+  position: relative;
+  z-index: 999;
+}
+.menu-burger:active {
+  background: #0d4c93;
+  transform: rotate(360deg);
+}
+.menu-burger:active path {
+  fill: #fff;
+}
+
+@media screen and (max-width: 920px) {
+  .menu {
+    display: none !important;
+  }
+  .headerFixed {
+    transform: translateY(-4px);
+    max-height: 75px;
+  }
+  .menu-burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero .hero {
+    margin-top: -230px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .carts .cart:nth-child(odd) {
+    display: none;
+  }
+  .footer-menu {
+    display: none;
+  }
+  .oKompaniya-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .oKompaniya .title {
+    padding-top: 12px;
+  }
+  .main {
+    gap: 30px;
+  }
+  .header-right {
+    max-width: 130px;
+  }
+  .lealungue {
+    display: none;
+  }
+  .oKompaniya-right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .indicators {
+    bottom: 30px;
+  }
+  .main-l {
+    flex-direction: row-reverse;
+    gap: 30px;
+  }
+  .header-left {
+    gap: 20px;
+  }
+  .news-bottom a {
+    margin: 0 auto;
+  }
+  .news-bottom a:nth-child(2) {
+    display: none;
+  }
+  .footer-bottom p {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .footer-bottom p:nth-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 620px) {
+  .footer-contact-par {
+    flex-direction: column;
+    gap: 22px;
+  }
+  .footer-contact {
+    flex-direction: column;
+  }
+  .footer-logo {
+    flex-direction: column;
+  }
+  .oKompaniya-right {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .oKompaniya-right p {
+    text-align: center;
+  }
+  .indicators {
+    bottom: 1px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .main {
+    gap: 0;
+  }
+  .header .location,
+  .header .search,
+  .header .facebook {
+    display: none;
+  }
+  .newsCart .title {
+    margin-top: 100px;
+  }
+  .carousel-left h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .carousel-left p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .carousel-left {
+    max-width: 400px;
+    padding: 0 10px;
+    margin-right: 20px;
+  }
+  .carousel-left h1 {
+    max-width: 90%;
+  }
+  .newsCart .title {
+    margin-top: 200px;
+    margin-bottom: -80px;
+  }
+  .allProductsLink {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 380px) {
+  .newsCart .title {
+    margin-top: 280px;
+  }
+  p {
+    width: 100%;
+  }
+}
